@@ -50,6 +50,8 @@ local function payload_to_stack(pl)
 end
 
 
+-- loot.generate_loot(cat, count) generates count ItemStacks from the loot
+-- category cat and returns them as a list.
 loot.generate_loot = function(category, count)
 	local cat = get_or_make_cat(category)
 	local pls = cat:get(count)
@@ -64,6 +66,8 @@ end
 
 loot.modpath = modpath
 
+local vaults = minetest.setting_getbool("loot_vaults")
 
-dofile(modpath .. "loot_vault.lua")
+if vaults then dofile(modpath .. "loot_vault.lua") end
+
 dofile(modpath .. "default_loot.lua")
