@@ -5,9 +5,8 @@ chests to dungeons.
 
 Config
 ======
-Put ```loot_vaults=true``` in your minetest configuration file, if you want
-loot vaults to be generated. Loot vaults are structures that are generated
-buried in the ground (with exposed entrances) and contain four loot chests.
+```loot_vaults``` - Set to ```true``` to enable loot vault generation
+```no_dungeon_loot``` - Set to ```true``` to disable loot generation in dungeons.
 
 API
 ===
@@ -45,3 +44,12 @@ loot.generate_loot("category", count)
 <br/>
 This returns a list of ```ItemStack```s with ```count``` elements. Afterwards,
 you can stuff it in a chest or other container, or drop them in the world, etc.
+
+Predefined Categories
+---------------------
+ - ```generic```: The dumping ground for almost all loot. Put your loot in this
+   category if you want it to be available in dungeons, or other mods that
+   choose to generate generic loot.
+ - ```valuable```: Used for particularly valuable loot, such as precious stones
+   or metals. Dungeons and loot vault chests are guaranteed to contain at least
+   one of these.
