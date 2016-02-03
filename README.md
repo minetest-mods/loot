@@ -5,7 +5,7 @@ chests to dungeons.
 
 Config
 ======
-```loot_vaults``` - Set to ```true``` to enable loot vault generation
+```loot_vaults``` - Set to ```true``` to enable loot vault generation. <br/>
 ```no_dungeon_loot``` - Set to ```true``` to disable loot generation in dungeons.
 
 API
