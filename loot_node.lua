@@ -18,7 +18,7 @@ minetest.register_abm({
 		local inv = minetest.get_meta(pos):get_inventory()
 
 		local valuable_count = math.random(1,3)
-		local generic_count = math.random(0,10)
+		local generic_count = math.random(0,5)
 
 		local valuables = loot.generate_loot("valuable", valuable_count)
 		local loots = loot.generate_loot("generic", generic_count)
