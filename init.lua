@@ -67,7 +67,11 @@ end
 loot.modpath = modpath
 
 local vaults = minetest.setting_getbool("loot_vaults")
-
-if vaults then dofile(modpath .. "loot_vault.lua") end
+local no_d_loot = minetest.setting_getbool("no_dungeon_loot")
 
 dofile(modpath .. "default_loot.lua")
+
+dofile(modpath .. "loot_node.lua")
+if vaults then dofile(modpath .. "loot_vault.lua") end
+if not no_d_loot then dofile(modpath .. "dungeon.lua") end
+
