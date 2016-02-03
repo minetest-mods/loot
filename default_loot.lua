@@ -82,7 +82,7 @@ loot.register_loot(
 
 loot.register_loot(
 	{ weights = { generic = 20,
-		      valuable = 200, },
+		      valuable = 20, },
 	  payload = { stack = ItemStack("default:mese"),
 		      min_size = 1,
 		      max_size = 5,
