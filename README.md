@@ -53,3 +53,7 @@ Predefined Categories
  - ```valuable```: Used for particularly valuable loot, such as precious stones
    or metals. Dungeons and loot vault chests are guaranteed to contain at least
    one of these.
+
+<br/>
+You do not need to define a category before using it; simply put it in your
+loot's weights table.
