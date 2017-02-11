@@ -3,10 +3,10 @@
 This is a framework for registering and generating loot. It also adds loot
 chests to dungeons.
 
-Config
+Settings
 ======
 ```loot_vaults``` - Set to ```true``` to enable loot vault generation. <br/>
-```no_dungeon_loot``` - Set to ```true``` to disable loot generation in dungeons.
+```loot_dungeons``` - Set to ```true``` to enable loot generation in dungeons.
 
 API
 ===

@@ -1,0 +1,5 @@
+#Generate loot vaults
+loot_vaults (Generate loot vaults) bool false
+
+#Add loot to dungeons
+loot_dungeons (Add loot to dungeons) bool true
