@@ -14,7 +14,7 @@ minetest.register_abm({
 	chance = 1,
 	action = function(pos)
 		minetest.remove_node(pos)
-		minetest.place_node(pos, {name = "default:chest"})
+		minetest.add_node(pos, {name = "default:chest"})
 		local inv = minetest.get_meta(pos):get_inventory()
 
 		local valuable_count = math.random(1,3)
