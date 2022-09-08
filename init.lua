@@ -66,8 +66,8 @@ end
 
 loot.modpath = modpath
 
-local vaults = minetest.setting_getbool("loot_vaults")
-local dungeon_loot = minetest.setting_getbool("loot_dungeons")
+local vaults = minetest.settings:get_bool("loot_vaults", false)
+local dungeon_loot = minetest.settings:get_bool("loot_dungeons", true)
 if dungeon_loot == nil then dungeon_loot = true end -- default dungeon loot to true
 
 dofile(modpath .. "default_loot.lua")
